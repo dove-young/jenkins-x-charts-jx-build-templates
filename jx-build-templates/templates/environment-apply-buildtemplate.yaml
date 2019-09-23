@@ -8,7 +8,7 @@ spec:
   - env:
     - name: CHART_REPOSITORY
       value: http://jenkins-x-chartmuseum:8080
-    image: gcr.io/jenkinsxio/builder-jx:{{ .Values.builderTag }}
+    image: 9.46.76.93:5000/jenkinsxio/builder-jx:{{ .Values.builderTag }}
     name: apply
     args:
     - jx
